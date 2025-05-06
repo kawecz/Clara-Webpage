@@ -8,7 +8,7 @@
     .alphabet {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr; 
-        width: 450px;
+        width: 350px;
     }
 
     
