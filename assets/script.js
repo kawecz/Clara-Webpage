@@ -1,5 +1,7 @@
 const alphabet = document.querySelector('.alphabet');
-let currentAudio = null; // 🔊 Track currently playing audio
+let currentAudio = null;
+let currentButton = null;
+let currentLetter = null;
 
 alphabet.addEventListener('click', (e) => {
   const li = e.target.closest('li');
@@ -36,22 +38,80 @@ alphabet.addEventListener('click', (e) => {
     Z: 'zither.mp3'
   };
 
-  const filename = sounds[letter];
-  if (!filename) {
-    console.warn(`No sound assigned for ${letter}`);
+  const images = {
+    A: 'accordeon.png',
+    B: 'banjo.png',
+    C: 'clarinette.png',
+    D: 'didgeridoo.png',
+    E: 'euphonium.png',
+    F: 'flute.png',
+    G: 'guitare.png',
+    H: 'harmonica.png',
+    I: 'inanga.png',
+    J: 'jumbe.png',
+    K: 'kalimba.png',
+    L: 'lyre.png',
+    M: 'melodica.png',
+    N: 'nebulophone.png',
+    O: 'orgue.png',
+    P: 'piano.png',
+    Q: 'quena.png',
+    R: 'rebec.png',
+    S: 'saxophone.png',
+    T: 'trompette.png',
+    U: 'ukulele.png',
+    V: 'violon.png',
+    W: 'waterphone.png',
+    X: 'xylophone.png',
+    Y: 'yunluo.png',
+    Z: 'zither.png'
+  };
+
+  const soundFile = sounds[letter];
+  const imageFile = images[letter];
+  const instrumentName = soundFile.replace('.mp3', '');
+
+  if (!soundFile || !imageFile) {
+    console.warn(`Missing sound or image for ${letter}`);
     return;
   }
 
-  // 🔇 Stop current sound if playing
   if (currentAudio) {
     currentAudio.pause();
     currentAudio.currentTime = 0;
   }
 
-  // ▶️ Play new sound
-  currentAudio = new Audio(`../content/sounds/${filename}`);
+  if (currentButton && currentLetter) {
+    currentButton.innerHTML = currentLetter;
+  }
+
+  currentAudio = new Audio(`../content/sounds/${soundFile}`);
   currentAudio.play().catch(err => {
     console.error("Audio playback error:", err);
+  });
+
+  const button = li.querySelector('button');
+  currentLetter = button.textContent;
+  currentButton = button;
+
+  const img = document.createElement('img');
+  img.src = `../content/img/${imageFile}`;
+  img.alt = instrumentName;
+  img.classList.add('instrument-image');
+
+  const label = document.createElement('div');
+  label.textContent = instrumentName;
+  label.classList.add('instrument-label');
+
+  button.innerHTML = '';
+  button.appendChild(img);
+  button.appendChild(label);
+
+  currentAudio.addEventListener('ended', () => {
+    button.innerHTML = currentLetter;
+    currentAudio = null;
+    currentButton = null;
+    currentLetter = null;
   });
 });
 
