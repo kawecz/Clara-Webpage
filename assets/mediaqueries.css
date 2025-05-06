@@ -1,0 +1,25 @@
+@media (max-width:750px) {
+    .main-content iframe {
+        max-width: 350px;
+        height: 190px;
+        box-shadow: 5px 5px 10px #928f8b8a;
+    }
+
+    .alphabet {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr; 
+        width: 450px;
+    }
+
+    
+    .alphabet li button {
+        cursor: pointer;
+        padding: 1em;
+        border: none;
+        border-radius: 1em;
+        width: 50px;
+        height: 50px;
+        background: var(--color1);
+        
+    }
+}
