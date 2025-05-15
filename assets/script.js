@@ -38,41 +38,11 @@ alphabet.addEventListener('click', (e) => {
     Z: 'zither.mp3'
   };
 
-  const images = {
-    A: 'accordeon.png',
-    B: 'banjo.png',
-    C: 'clarinette.png',
-    D: 'didgeridoo.png',
-    E: 'euphonium.png',
-    F: 'flute.png',
-    G: 'guitare.png',
-    H: 'harmonica.png',
-    I: 'inanga.png',
-    J: 'jumbe.png',
-    K: 'kalimba.png',
-    L: 'lyre.png',
-    M: 'melodica.png',
-    N: 'nebulophone.png',
-    O: 'orgue.png',
-    P: 'piano.png',
-    Q: 'quena.png',
-    R: 'rebec.png',
-    S: 'saxophone.png',
-    T: 'trompette.png',
-    U: 'ukulele.png',
-    V: 'violon.png',
-    W: 'waterphone.png',
-    X: 'xylophone.png',
-    Y: 'yunluo.png',
-    Z: 'zither.png'
-  };
-
   const soundFile = sounds[letter];
-  const imageFile = images[letter];
   const instrumentName = soundFile.replace('.mp3', '');
 
-  if (!soundFile || !imageFile) {
-    console.warn(`Missing sound or image for ${letter}`);
+  if (!soundFile) {
+    console.warn(`Missing sound for ${letter}`);
     return;
   }
 
@@ -94,17 +64,12 @@ alphabet.addEventListener('click', (e) => {
   currentLetter = button.textContent;
   currentButton = button;
 
-  const img = document.createElement('img');
-  img.src = `../content/img/${imageFile}`;
-  img.alt = instrumentName;
-  img.classList.add('instrument-image');
-
+  // ✅ Apenas mostra o nome do instrumento (sem imagem)
   const label = document.createElement('div');
   label.textContent = instrumentName;
   label.classList.add('instrument-label');
 
   button.innerHTML = '';
-  button.appendChild(img);
   button.appendChild(label);
 
   currentAudio.addEventListener('ended', () => {
