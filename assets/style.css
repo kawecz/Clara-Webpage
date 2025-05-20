@@ -4,6 +4,33 @@
     --color2:#038C7F;
     --color3:#A9D9D0;
     --color4:#F2E7DC;
+    
+    --colorA:#FFF;
+    --colorB:#000;
+    --colorC:#F0D555;
+    --colorD:#F03F39;
+    --colorE:#738698;
+    --colorF:#0D2033;
+    --colorG:#9E4A0D;
+    --colorH:#F06E11;
+    --colorI:#C2A868;
+    --colorJ:#72C4F0;
+    --colorK:#1D303B;
+    --colorL:#6E569E;
+    --colorM:#F073E5;
+    --colorN:#F02046;
+    --colorO:#fff;
+    --colorP:#000;
+    --colorQ:#C57056;
+    --colorR:#2E4329;
+    --colorS:#F0B94F;
+    --colorT:#151E41;
+    --colorU:#C74F33;
+    --colorV:#4FBAF0;
+    --colorW:#000;
+    --colorX:#3D4029;
+    --colorY:#A9D9D0;
+    --colorZ:#9FF04F;
 }
 
 * {
@@ -39,6 +66,95 @@ main {
     text-align: center;
 }
 
+/*Coloring the buttons*/
+ #a {
+    background: var(--colorA);
+    color: black;
+ }
+ #b {
+    background: var(--colorB);
+    color: white;
+ }
+ #c {
+    background: var(--colorC);
+ }
+ #d {
+    background: var(--colorD);
+ }
+ #e {
+    background: var(--colorE);
+ }
+ #f {
+    background: var(--colorF);
+    color: white;
+ }
+ #g {
+    background: var(--colorG);
+ }
+ #h{ 
+    background: var(--colorH);
+ }
+ #i {
+    background: var(--colorI);
+ }
+ #j {
+    background: var(--colorJ);
+ }
+ #k {
+    background: var(--colorK);
+ }
+ #l {
+    background: var(--colorL);
+ }
+ #m {
+    background: var(--colorM);
+ }
+ #n {
+    background: var(--colorN);
+ }
+ #o {
+    background: var(--colorO);
+ }
+ #p {
+    background: var(--colorP);
+    color: white;
+ }
+ #q {
+    background: var(--colorQ);
+ }
+ #r {
+    background: var(--colorR);
+ }
+ #s {
+    background: var(--colorS);
+ }
+ #t {
+    background: var(--colorT);
+    color: white;
+ }
+ #u {
+    background: var(--colorU);
+ }
+ #v {
+    background: var(--colorV);
+ }
+ #w {
+    background: var(--colorW);
+    color: white;
+ }
+ #x {
+    background: var(--colorX);
+ }
+ #y {
+    background: var(--colorY);
+ }
+ #z {
+    background: var(--colorZ);
+ }
+
+
+/*End*/
+
 .alphabet li {
     padding: 0.5em;
 }
@@ -55,7 +171,6 @@ main {
 }
 .alphabet li button:hover {
     background: var(--color2);
-    color: var(--color4);
     transform: scale(1.1);
 }
 

@@ -3,6 +3,16 @@ let currentAudio = null;
 let currentButton = null;
 let currentLetter = null;
 
+// Letras com cores personalizadas para os nomes dos instrumentos
+const labelColors = {
+  A: '#000000',   // preto
+  D: '#F2E7DC',   // bege claro
+  I: '#000000',
+  M: '#0000FF',   // azul
+  O: '#000000',
+  Z: '#000000'    // rosa
+};
+
 alphabet.addEventListener('click', (e) => {
   const li = e.target.closest('li');
   if (!li) return;
@@ -35,11 +45,11 @@ alphabet.addEventListener('click', (e) => {
     W: 'waterphone.mp3',
     X: 'xylophone.mp3',
     Y: 'yunluo.mp3',
-    Z: 'zither.mp3'
+    Z: 'Zurna.mp3'
   };
 
   const soundFile = sounds[letter];
-  const instrumentName = soundFile.replace('.mp3', '');
+  const instrumentName = soundFile?.replace('.mp3', '');
 
   if (!soundFile) {
     console.warn(`Missing sound for ${letter}`);
@@ -64,10 +74,14 @@ alphabet.addEventListener('click', (e) => {
   currentLetter = button.textContent;
   currentButton = button;
 
-  // ✅ Apenas mostra o nome do instrumento (sem imagem)
   const label = document.createElement('div');
   label.textContent = instrumentName;
   label.classList.add('instrument-label');
+
+  // Aplica cor personalizada se a letra estiver na lista
+  if (labelColors[letter]) {
+    label.style.color = labelColors[letter];
+  }
 
   button.innerHTML = '';
   button.appendChild(label);
@@ -79,5 +93,6 @@ alphabet.addEventListener('click', (e) => {
     currentLetter = null;
   });
 });
+
 
 
