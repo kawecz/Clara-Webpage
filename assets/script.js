@@ -8,9 +8,12 @@ const labelColors = {
   A: '#000000',   // preto
   D: '#F2E7DC',   // bege claro
   I: '#000000',
-  M: '#0000FF',   // azul
+  M: '#0000FF',
+  J: '#000000',  
+  K: '#000000',
   O: '#000000',
-  Z: '#000000'    // rosa
+  Y: '#000000',
+  Z: '#000000'    
 };
 
 alphabet.addEventListener('click', (e) => {

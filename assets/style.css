@@ -29,7 +29,7 @@
     --colorV:#29a8e7;
     --colorW:#000;
     --colorX:#838f36;
-    --colorY:#3fffdc;
+    --colorY:#A9D9D0;
     --colorZ:#9FF04F;
 }
 
@@ -82,9 +82,11 @@ main {
  }
  #d {
     background: var(--colorD);
+    color: white;
  }
  #e {
     background: var(--colorE);
+    color: white;
  }
  #f {
     background: var(--colorF);
@@ -113,6 +115,7 @@ main {
  }
  #n {
     background: var(--colorN);
+    color: white;
  }
  #o {
     background: var(--colorO);
