@@ -6,6 +6,7 @@ let currentLetter = null;
 // Letras com cores personalizadas para os nomes dos instrumentos
 const labelColors = {
   A: '#000000',   // preto
+  C: '#000000',
   D: '#F2E7DC',   // bege claro
   I: '#000000',
   M: '#0000FF',
