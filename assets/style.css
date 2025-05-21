@@ -15,7 +15,7 @@
     --colorH:#F06E11;
     --colorI:#C2A868;
     --colorJ:#72C4F0;
-    --colorK:#1D303B;
+    --colorK:#9adcff;
     --colorL:#6E569E;
     --colorM:#F073E5;
     --colorN:#F02046;
@@ -26,10 +26,10 @@
     --colorS:#F0B94F;
     --colorT:#151E41;
     --colorU:#C74F33;
-    --colorV:#4FBAF0;
+    --colorV:#29a8e7;
     --colorW:#000;
-    --colorX:#3D4029;
-    --colorY:#A9D9D0;
+    --colorX:#838f36;
+    --colorY:#3fffdc;
     --colorZ:#9FF04F;
 }
 
@@ -49,8 +49,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    padding: 2em;
     justify-content: center;
+    background: url(../content/img/background.png);
+    background-size: cover;
 }
 
 .main-content iframe {
