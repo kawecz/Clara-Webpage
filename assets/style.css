@@ -51,8 +51,8 @@ main {
     align-items: center;
     padding: 2em;
     justify-content: center;
-    background: url(../content/img/background.png);
-    background-size: cover;
+    background: #af62e3;
+    background: linear-gradient(to bottom, rgba(175, 98, 227, 1) 0%, rgba(255, 117, 117, 1) 41%, rgba(255, 204, 133, 1) 100%);
 }
 
 .main-content iframe {
