@@ -1,7 +1,7 @@
 @media (max-width:750px) {
-    .main-content iframe {
+    .main-content img {
         max-width: 350px;
-        height: 190px;
+        height: 300px;
         box-shadow: 5px 5px 10px #928f8b8a;
     }
 
