@@ -66,11 +66,10 @@ main {
     background-position: center;
 }
 
-.main-content img {
+.main-content video {
     border-radius: 2em;
     box-shadow: 5px 5px 10px #928f8b8a;
-    width:550px;
-    height: 450px;
+    
 }
 
 .alphabet {
@@ -260,6 +259,7 @@ main {
 .flute-image {
    width:200px;
    height:150px;
+   margin-right: 20px;
 }
 
 .harmonica-image {
@@ -277,10 +277,12 @@ main {
 .kalimba-image {
    width: 200px;
    height: 150px;
+   margin-right: 25px;
 }
 .lyre-image {
    width: 200px;
    height: 150px;
+   margin-right: 20px;
 }
 .melodica-image {
    width: 250px;
@@ -299,12 +301,13 @@ main {
    height: 150px;
 }
 .waterphone-image {
-   width: 200px;
+   width: 250px;
    height: 150px;
 }
 .xylophone-image {
    width: 200px;
    height: 150px;
+   margin-left: 20px;
 }
 .yunluo-image {
    width: 300px;
@@ -313,4 +316,5 @@ main {
 .zurna-image {
    width: 200px;
    height: 150px;
+   margin-right: 20px;
 }
