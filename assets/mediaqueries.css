@@ -1,7 +1,7 @@
 @media (max-width:665px) {
     .main-content video {
-        max-width: 350px;
-        height: 330px;
+        max-width: 300px;
+        height: 300px;
         box-shadow: 5px 5px 10px #928f8b8a;
     }
 
