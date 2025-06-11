@@ -66,10 +66,9 @@ main {
     background-position: center;
 }
 
-.main-content video {
+.main-content iframe {
     border-radius: 2em;
     box-shadow: 5px 5px 10px #928f8b8a;
-    
 }
 
 .alphabet {
