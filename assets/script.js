@@ -14,7 +14,7 @@ const sounds = {
   E: 'Euphonium.mp3', F: 'Flûte.mp3', G: 'Guitare.mp3', H: 'Harmonica.mp3',
   I: 'Inanga.mp3', J: 'Jumbe.mp3', K: 'Kalimba.mp3', L: 'Lyre.mp3',
   M: 'Mélodica.mp3', N: 'Nébulophone.mp3', O: 'Orgue.mp3', P: 'Piano.mp3',
-  Q: 'Quéna.mp3', R: 'Rébec.mp3', S: 'Saxophone.mp3', T: 'Trompette.mp3',
+  Q: 'Quena.mp3', R: 'Rébec.mp3', S: 'Saxophone.mp3', T: 'Trompette.mp3',
   U: 'Ukulélé.mp3', V: 'Violon.mp3', W: 'Waterphone.mp3', X: 'Xylophone.mp3',
   Y: 'Yunluo.mp3', Z: 'Zurna.mp3'
 };
@@ -24,7 +24,7 @@ const images = {
   E: 'euphonium.jpg', F: 'flûte.jpg', G: 'guitare.jpg', H: 'harmonica.jpg',
   I: 'inanga.jpg', J: 'jembe.jpg', K: 'kalimba.jpg', L: 'lyre.jpg',
   M: 'mélodica.jpg', N: 'nébulophone.jpg', O: 'orgue.jpg', P: 'piano.jpg',
-  Q: 'quéna.jpg', R: 'rébec.jpg', S: 'saxophone.jpg', T: 'trompette.jpg',
+  Q: 'quena.jpg', R: 'rébec.jpg', S: 'saxophone.jpg', T: 'trompette.jpg',
   U: 'ukulélé.jpg', V: 'violon.jpg', W: 'waterphone.jpg', X: 'xylophone.jpg',
   Y: 'yunluo.jpg', Z: 'zurna.jpg'
 };
@@ -67,6 +67,8 @@ alphabet.addEventListener('click', (e) => {
 
   if (letter === 'C') {
   img.classList.add('clarinet-image');
+} else if(letter === 'D') {
+  img.classList.add('didgeridoo-image')
 } else if (letter === 'F') {
   img.classList.add('flute-image')
  } else if(letter === 'H') {
@@ -81,7 +83,9 @@ alphabet.addEventListener('click', (e) => {
   img.classList.add('lyre-image')
  }else if(letter === 'M'){
   img.classList.add('melodica-image')
- }else if(letter === 'N'){
+ }else if(letter === 'P') {
+  img.classList.add('piano-image')
+ } else if(letter === 'N'){
   img.classList.add('nebulophone-image')
  } else if(letter === 'Q') {
   img.classList.add('quena-image')

@@ -20,7 +20,7 @@
     --colorM:#F073E5;
     --colorN:#F02046;
     --colorO:#fff;
-    --colorP:#000;
+    --colorP:#1a1a1a;
     --colorQ:#C57056;
     --colorR:#2E4329;
     --colorS:#F0B94F;
@@ -250,10 +250,13 @@ main {
   font-family: 'emily_olivia';
 }
 
-/* Make clarinet image larger */
+/* Make instruments images larger */
 .clarinet-image {
   width: 200px;
   height: 150px;
+}
+.didgeridoo-image {
+   width: 150px;
 }
 .flute-image {
    width:200px;
@@ -274,14 +277,12 @@ main {
    height: 150px;
 }
 .kalimba-image {
-   width: 200px;
-   height: 150px;
-   margin-right: 25px;
+   width: 140px;
+   margin-left: 28px;
 }
 .lyre-image {
-   width: 200px;
-   height: 150px;
-   margin-right: 20px;
+   width: 140px;
+   margin-left: 28px;
 }
 .melodica-image {
    width: 250px;
@@ -291,6 +292,7 @@ main {
    width: 250px;
    height: 150px;
 }
+
 .quena-image {
    width: 150px;
    height: 150px;
@@ -300,8 +302,7 @@ main {
    height: 150px;
 }
 .waterphone-image {
-   width: 250px;
-   height: 150px;
+   width: 150px;
 }
 .xylophone-image {
    width: 200px;
